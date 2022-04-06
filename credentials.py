@@ -48,6 +48,18 @@ pm_lj = "loja"
 pm_dt = "data"
 pm_tb_ft_pd = "fato_pedidos"
 
+# Table dim_produtos
+pm_id_prd = "id"
+pm_prd_prd = "produto"
+pm_vl_prd = "valor"
+pm_tb_dm_prd = "dim_produtos"
+
+# Table dim_lojas
+pm_id_lj = "id"
+pm_logradouro_lj = "logradouro"
+pm_cidade_lj = "cidade"
+pm_estado_lj = "estado"
+pm_tb_dm_lj = "dim_lojas"
 
 def main():
     pass
