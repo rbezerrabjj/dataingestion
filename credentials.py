@@ -25,19 +25,21 @@ class Credentials():
         self.password_postgres = password_postgres
         self.sslmode_postgres = sslmode_postgres
         self.port_postgres = port_postgres
+        
+import pwinput
 
 # Mysql
 host_mysql = "localhost"
-user_mysql = "rbezerra"
-password_mysql = "021212"
+user_mysql = input("User_mysql: ") # user
+password_mysql = pwinput.pwinput(prompt="Password_mysql: ", mask='*') # password
 database_mysql = "pocingestionprd"
 
 # Postgres
 driver_postgres = "postgresql+psycopg2"
 host_postgres = "localhost"
-user_postgres = "etl"
+user_postgres = input("User_postgres: ") # user
+password_postgres = pwinput.pwinput(prompt="Password_postgres: ", mask='*') # password
 dbname_postgres = "pocdw"
-password_postgres = "021212"
 sslmode_postgres = "require"
 port_postgres = "5432"
 
